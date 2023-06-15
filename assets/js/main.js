@@ -61,14 +61,9 @@
     window.addEventListener('load', navbarlinksActive)
     onscroll(document, navbarlinksActive)
 
-    window.onscroll = function() {
-            if (window.scrollY > 200) {
-                alert('123');
-            }
-        }
-        /**
-         * Scrolls to an element with header offset
-         */
+    /**
+     * Scrolls to an element with header offset
+     */
     const scrollto = (el) => {
         let header = select('#header')
         let offset = header.offsetHeight
